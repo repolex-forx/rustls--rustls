@@ -1,0 +1,95 @@
+[2026-11-22T12:17:57Z] === ENRICH ITERATION 1 START | repo=rustls/rustls sha=2976d90f ===
+[2026-11-22T12:17:57Z] [iter=1] PHASE START: enrich repo=rustls/rustls sha=2976d90f runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/2976d90f-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/2976d90fd1c2db6b518700dd101b714069cfcb17.nq.gz
+[2026-11-22T12:17:57Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=77 MB
+[2026-11-22T12:18:18Z] [iter=1] AST store loaded triples=2442470 load_secs=20 mem_mb=890 MB
+[2026-11-22T12:18:18Z] [iter=1] Step 2: Finding LSP targets mem_mb=890 MB
+[2026-11-22T12:18:25Z] [iter=1] LSP targets found call_sites=21315 imports=1101 extends=0 implements=216 secs=7
+[2026-11-22T12:18:30Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=890 MB
+[2026-11-22T12:18:45Z] [iter=1] Position index built positions=157925 nodes_with_types=195027 secs=16 mem_mb=890 MB
+[2026-11-22T12:18:45Z] [iter=1] Step 3: Starting LSP resolution mem_mb=890 MB already_completed_types=[] already_completed_files=0
+[2026-11-22T12:18:45Z] [iter=1] Resolving target type target_type=call_site count=21315
+[2026-11-22T12:20:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=2.3 files_done=0 resolved=0 errors=0 current=provider-example/src/hpke.rs
+[2026-11-22T12:21:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=3.5 files_done=1 resolved=65 errors=0 current=rustls/tests/api.rs
+[2026-11-22T12:48:51Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=30.9 files_done=2 resolved=3530 errors=0 current=rustls/src/hash_hs.rs
+[2026-11-22T12:50:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=3 resolved=3651 errors=0 current=rustls/src/client/tls13.rs
+[2026-11-22T12:53:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=35.8 files_done=4 resolved=3973 errors=0 current=rustls/src/server/hs.rs
+[2026-11-22T12:54:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.0 files_done=5 resolved=4149 errors=0 current=rustls/src/limited_cache.rs
+[2026-11-22T12:55:38Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=37.7 files_done=6 resolved=4278 errors=0 current=rustls/src/server/tls12.rs
+[2026-11-22T12:58:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=40.1 files_done=7 resolved=4502 errors=0 current=rustls/src/client/tls12.rs
+[2026-11-22T13:00:07Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=42.2 files_done=8 resolved=4739 errors=0 current=rustls-bench/src/main.rs
+[2026-11-22T13:03:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.0 files_done=9 resolved=5143 errors=0 current=rustls/src/webpki/server_verifier.rs
+[2026-11-22T13:04:50Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=46.9 files_done=10 resolved=5251 errors=0 current=rustls/src/crypto/aws_lc_rs/mod.rs
+[2026-11-22T13:06:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=48.7 files_done=12 resolved=5502 errors=0 current=rustls/src/compress.rs
+[2026-11-22T13:07:20Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=49.4 files_done=14 resolved=5603 errors=0 current=rustls/src/msgs/deframer/handshake.rs
+[2026-11-22T13:08:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=50.3 files_done=15 resolved=5736 errors=0 current=bogo/src/main.rs
+[2026-11-22T13:12:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=54.8 files_done=16 resolved=6501 errors=0 current=rustls/tests/client_cert_verifier.rs
+[2026-11-22T13:13:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.4 files_done=17 resolved=6571 errors=0 current=rustls/src/suites.rs
+[2026-11-22T13:18:37Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=60.7 files_done=19 resolved=7265 errors=0 current=rustls/src/msgs/message/inbound.rs
+[2026-11-22T13:19:29Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=61.5 files_done=21 resolved=7396 errors=0 current=rustls/src/tls13/key_schedule.rs
+[2026-11-22T13:22:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=64.3 files_done=22 resolved=7624 errors=0 current=examples/src/bin/tlsclient-mio.rs
+[2026-11-22T13:23:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=65.3 files_done=23 resolved=7783 errors=0 current=rustls/src/client/hs.rs
+[2026-11-22T13:25:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=67.6 files_done=24 resolved=8075 errors=0 current=rustls/src/msgs/handshake_test.rs
+[2026-11-22T13:27:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=69.4 files_done=25 resolved=8453 errors=0 current=rustls-post-quantum/benches/benchmarks.rs
+[2026-11-22T13:28:03Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=70.1 files_done=26 resolved=8573 errors=0 current=rustls/tests/server_cert_verifier.rs
+[2026-11-22T13:29:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=71.3 files_done=27 resolved=8708 errors=0 current=rustls/examples/internal/test_ca.rs
+[2026-11-22T13:31:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=30 resolved=9163 errors=0 current=rustls/src/crypto/tls12.rs
+[2026-11-22T13:32:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=74.6 files_done=32 resolved=9259 errors=0 current=examples/src/bin/tlsserver-mio.rs
+[2026-11-22T13:33:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=75.7 files_done=33 resolved=9473 errors=0 current=rustls/src/server/test.rs
+[2026-11-22T13:35:09Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=77.2 files_done=34 resolved=9656 errors=0 current=examples/src/bin/unbuffered-client.rs
+[2026-11-22T13:36:40Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=78.7 files_done=36 resolved=9984 errors=0 current=rustls/src/vecbuf.rs
+[2026-11-22T13:38:02Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.1 files_done=38 resolved=10203 errors=0 current=openssl-tests/src/ffdhe_kx_with_openssl.rs
+[2026-11-22T13:38:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=80.7 files_done=39 resolved=10334 errors=0 current=rustls/tests/ech.rs
+[2026-11-22T13:41:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=83.5 files_done=41 resolved=10637 errors=0 current=rustls/src/crypto/aws_lc_rs/pq/mlkem.rs
+[2026-11-22T13:42:04Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=84.1 files_done=43 resolved=10805 errors=0 current=examples/src/bin/ech-client.rs
+[2026-11-22T13:43:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.0 files_done=45 resolved=11080 errors=0 current=rustls/src/crypto/aws_lc_rs/ticketer.rs
+[2026-11-22T13:44:31Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=86.6 files_done=46 resolved=11255 errors=0 current=rustls/src/msgs/handshake.rs
+[2026-11-22T13:51:22Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=93.4 files_done=47 resolved=11885 errors=0 current=rustls/src/crypto/aws_lc_rs/sign.rs
+[2026-11-22T13:52:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=94.2 files_done=48 resolved=12184 errors=0 current=rustls/src/quic.rs
+[2026-11-22T13:53:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=49 resolved=12316 errors=0 current=rustls/src/conn/unbuffered.rs
+[2026-11-22T13:54:36Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=96.6 files_done=50 resolved=12422 errors=0 current=provider-example/examples/client.rs
+[2026-11-22T13:58:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=100.5 files_done=54 resolved=13008 errors=0 current=rustls/src/common_state.rs
+[2026-11-22T14:00:15Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.3 files_done=55 resolved=13193 errors=0 current=rustls/src/client/common.rs
+[2026-11-22T14:00:47Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=102.8 files_done=58 resolved=13274 errors=0 current=rustls/src/msgs/message_test.rs
+[2026-11-22T14:01:32Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=103.6 files_done=61 resolved=13435 errors=0 current=rustls/src/crypto/ring/sign.rs
+[2026-11-22T14:02:06Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=104.2 files_done=62 resolved=13668 errors=0 current=examples/src/bin/simpleserver.rs
+[2026-11-22T14:04:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=106.1 files_done=66 resolved=13923 errors=0 current=rustls/src/webpki/client_verifier.rs
+[2026-11-22T14:05:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.2 files_done=67 resolved=14067 errors=0 current=examples/src/bin/simpleclient.rs
+[2026-11-22T14:05:45Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=107.8 files_done=69 resolved=14168 errors=0 current=rustls/src/crypto/aws_lc_rs/hpke.rs
+[2026-11-22T14:06:59Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.0 files_done=70 resolved=14350 errors=0 current=rustls/src/client/client_conn.rs
+[2026-11-22T14:07:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=109.8 files_done=71 resolved=14443 errors=0 current=rustls/src/verifybench.rs
+[2026-11-22T14:08:53Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=110.9 files_done=74 resolved=14627 errors=0 current=provider-example/src/verify.rs
+[2026-11-22T14:10:00Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.0 files_done=77 resolved=14737 errors=0 current=rustls/src/crypto/ring/tls12.rs
+[2026-11-22T14:10:48Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=112.8 files_done=78 resolved=14837 errors=0 current=rustls/src/key_log_file.rs
+[2026-11-22T14:11:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=113.4 files_done=81 resolved=14971 errors=0 current=connect-tests/tests/badssl.rs
+[2026-11-22T14:12:14Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=114.3 files_done=82 resolved=15037 errors=0 current=fuzz/fuzzers/unbuffered.rs
+[2026-11-22T14:13:17Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=115.3 files_done=84 resolved=15169 errors=0 current=rustls/src/crypto/ring/quic.rs
+[2026-11-22T14:14:05Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.1 files_done=85 resolved=15290 errors=0 current=rustls/src/server/builder.rs
+[2026-11-22T14:14:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=116.9 files_done=88 resolved=15432 errors=0 current=examples/src/bin/simple_0rtt_client.rs
+[2026-11-22T14:15:42Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=117.7 files_done=92 resolved=15619 errors=0 current=rustls/src/crypto/ring/hmac.rs
+[2026-11-22T14:16:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=118.7 files_done=96 resolved=15762 errors=0 current=rustls/src/crypto/ring/tls13.rs
+[2026-11-22T14:17:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=119.5 files_done=97 resolved=15858 errors=0 current=openssl-tests/src/ffdhe.rs
+[2026-11-22T14:18:23Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=120.4 files_done=100 resolved=15991 errors=0 current=rustls/src/crypto/aws_lc_rs/tls12.rs
+[2026-11-22T14:19:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.2 files_done=101 resolved=16098 errors=0 current=rustls/src/enums.rs
+[2026-11-22T14:19:44Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=121.8 files_done=103 resolved=16168 errors=0 current=openssl-tests/src/utils.rs
+[2026-11-22T14:20:25Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=122.5 files_done=107 resolved=16276 errors=0 current=rustls/src/msgs/persist.rs
+[2026-11-22T14:21:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=123.3 files_done=109 resolved=16423 errors=0 current=provider-example/src/lib.rs
+[2026-11-22T14:22:13Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=124.3 files_done=113 resolved=16588 errors=0 current=rustls/src/x509.rs
+[2026-11-22T14:23:21Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=125.4 files_done=118 resolved=16846 errors=0 current=examples/src/bin/limitedclient.rs
+[2026-11-22T14:23:56Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.0 files_done=121 resolved=16966 errors=0 current=rustls/src/server/handy.rs
+[2026-11-22T14:24:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=126.8 files_done=123 resolved=17109 errors=0 current=rustls/src/conn/kernel.rs
+[2026-11-22T14:25:27Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=127.5 files_done=127 resolved=17296 errors=0 current=rustls/src/crypto/tls13.rs
+[2026-11-22T14:26:11Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.2 files_done=128 resolved=17370 errors=0 current=admin/threads-seq.rs
+[2026-11-22T14:26:41Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=128.7 files_done=142 resolved=17497 errors=0 current=rustls/src/time_provider.rs
+[2026-11-22T14:27:16Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.3 files_done=151 resolved=17584 errors=0 current=rustls/src/crypto/hmac.rs
+[2026-11-22T14:27:49Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=129.9 files_done=170 resolved=17696 errors=0 current=admin/all-workspace-members
+[2026-11-22T14:28:00Z] [iter=1] Target type resolved target_type=call_site resolved=17714 errors=0 secs=7755 mem_mb=890 MB
+[2026-11-22T14:28:00Z] [iter=1] Resolving target type target_type=import_statement count=1101
+[2026-11-22T14:28:25Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=130.5 files_done=1 resolved=13 errors=0 current=rustls/src/record_layer.rs
+[2026-11-22T14:28:55Z] [iter=1] HEARTBEAT target_type=import_statement elapsed_min=131.0 files_done=107 resolved=906 errors=0 current=rustls/src/crypto/aws_lc_rs/pq/mod.rs
+[2026-11-22T14:29:18Z] [iter=1] Target type resolved target_type=import_statement resolved=1077 errors=0 secs=78 mem_mb=890 MB
+[2026-11-22T14:29:18Z] [iter=1] Resolving target type target_type=implements_clause count=216
+[2026-11-22T14:29:29Z] [iter=1] HEARTBEAT target_type=implements_clause elapsed_min=131.5 files_done=0 resolved=0 errors=0 current=rustls/src/client/client_conn.rs
+[2026-11-22T14:29:47Z] [iter=1] Target type resolved target_type=implements_clause resolved=215 errors=0 secs=29 mem_mb=890 MB
+[2026-11-22T16:22:38Z] [iter=1] Step 5: Writing final enrichment file triples=232319
+[2026-11-22T16:22:41Z] [iter=1] Enrichment file written path=/home/runner/work/forx/forx/storage/aggregate/lsp/2976d90fd1c2db6b518700dd101b714069cfcb17.nq.gz size_kb=5482
+[2026-11-22T16:22:41Z] [iter=1] PHASE END: enrich elapsed_s=14684 elapsed_min=244.7 total_triples=232319
